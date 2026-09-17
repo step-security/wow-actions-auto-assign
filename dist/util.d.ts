@@ -1,7 +1,7 @@
-import { Inputs } from './inputs';
+import { Inputs } from './inputs.js';
 export declare function skip(msg: string): void;
 export declare function isValidEvent(event: string, action?: string | string[]): boolean | "" | undefined;
-export declare function getOctokit(): import("@octokit/core").Octokit & import("@octokit/plugin-rest-endpoint-methods/dist-types/types").Api & {
+export declare function getOctokit(): import("@octokit/core").Octokit & import("@octokit/plugin-rest-endpoint-methods").Api & {
     paginate: import("@octokit/plugin-paginate-rest").PaginateInterface;
 };
 type Octokit = ReturnType<typeof getOctokit>;

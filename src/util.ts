@@ -1,7 +1,7 @@
 import * as core from '@actions/core'
 import * as github from '@actions/github'
 import sampleSize from 'lodash.samplesize'
-import { Inputs } from './inputs'
+import { Inputs } from './inputs.js'
 
 export function skip(msg: string) {
   const { context } = github
@@ -117,12 +117,8 @@ function chooseUsers(candidates: string[], count: number, filterUser: string) {
     },
   )
 
-  // all-assign
   if (count === 0) {
-    return {
-      teams,
-      users,
-    }
+    return { teams, users }
   }
 
   return {
@@ -208,7 +204,7 @@ async function chooseAssignees(
   const users: string[] = []
   const teams: string[] = []
 
-  candidates.forEach((item) => {
+  candidates.forEach((item: string) => {
     if (item.includes('/')) {
       teams.push(item)
     } else {
