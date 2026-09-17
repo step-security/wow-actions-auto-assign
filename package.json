@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@bubkoo/eslint-config": "^1.3.0",
-    "@bubkoo/tsconfig": "^1.1.0",
+    "@bubkoo/tsconfig": "^2.0.0",
     "@types/lodash.samplesize": "^4.2.7",
     "@types/minimatch": "^3.0.0",
     "@types/node": "^18.11.18",
