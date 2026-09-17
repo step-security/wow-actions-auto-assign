@@ -117,8 +117,12 @@ function chooseUsers(candidates: string[], count: number, filterUser: string) {
     },
   )
 
+  // all-assign
   if (count === 0) {
-    return { teams, users }
+    return {
+      teams,
+      users,
+    }
   }
 
   return {

@@ -1,4 +1,4 @@
-import { parseInputs } from '@wow-actions/parse-inputs'
+import parseInputs from '@wow-actions/parse-inputs'
 
 export function getInputs() {
   return parseInputs({
