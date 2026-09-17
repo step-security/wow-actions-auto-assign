@@ -23,6 +23,11 @@ on:
         description: "Package manager to use"
         required: false
         default: "yarn"
+      yarn_version:
+        description: "Specify a yarn version"
+        required: false
+        default: "4"
+
   schedule:
     - cron: "0 0 * * 1"
 
@@ -35,6 +40,7 @@ jobs:
       node_version: ${{ inputs.node_version || '24' }}
       script: ${{ inputs.script || 'yarn build' }}
       package_manager: ${{ inputs.package_manager || 'yarn' }}
+      yarn_version: ${{ inputs.yarn_version || '4' }}
 
 permissions:
   contents: write
