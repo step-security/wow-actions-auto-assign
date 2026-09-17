@@ -2,8 +2,8 @@ import fs from 'fs'
 import * as core from '@actions/core'
 import * as github from '@actions/github'
 import axios, { isAxiosError } from 'axios'
-import * as util from './util.js'
-import { getInputs } from './inputs.js'
+import * as util from './util'
+import { getInputs } from './inputs'
 
 async function validateSubscription() {
   const eventPath = process.env.GITHUB_EVENT_PATH
