@@ -29,9 +29,8 @@ jobs:
           numberOfReviewers: 1
           numberOfAssignees: 1
           reviewers: |
-            /authors
+            /maintained-actions-dev
           assignees: |
-            this-is-an-unknown-assignee
-            /authors
+            /maintained-actions-dev
           skipKeywords: wip
           excludeLabels: dependencies, wip
