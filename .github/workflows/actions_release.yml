@@ -14,6 +14,10 @@ on:
         description: "Build script to run"
         required: false
         default: "yarn build"
+      yarn_version:
+        description: "Specify a yarn version"
+        required: false
+        default: "4"
 
 permissions:
   contents: read
@@ -30,3 +34,5 @@ jobs:
       tag: "${{ github.event.inputs.tag }}"
       node_version: ${{ inputs.node_version || '24' }}
       script: ${{ inputs.script || 'yarn build' }}
+      yarn_version: ${{ inputs.yarn_version || '4.15.0' }}
+
