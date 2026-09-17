@@ -845,14 +845,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/ncc@npm:^0.36.1":
-  version: 0.36.1
-  resolution: "@vercel/ncc@npm:0.36.1"
+"@vercel/ncc@npm:^0.45.0":
+  version: 0.45.0
+  resolution: "@vercel/ncc@npm:0.45.0"
   dependencies:
     node-gyp: "npm:latest"
   bin:
     ncc: dist/ncc/cli.js
-  checksum: 10c0/7c1c2f98e74a767d9786ce0878e1a6c9ac4960f1842a977c3d08ff85893f6d2dbc2f0d47c8532a2eb61cd2d6dbbb341ce16a15b36c643f892244fe94376aa50a
+  checksum: 10c0/e6b931654c47b0af3b53feebf53760efdc97a0dc6689fbc4b6c37f674150f0396047d0c96d1b02513fe1d43d4ff038050f8752adf58efc849219c9e2775b5f68
   languageName: node
   linkType: hard
 
@@ -1123,7 +1123,7 @@ __metadata:
     "@types/lodash.samplesize": "npm:^4.2.7"
     "@types/minimatch": "npm:^3.0.0"
     "@types/node": "npm:^18.11.18"
-    "@vercel/ncc": "npm:^0.36.1"
+    "@vercel/ncc": "npm:^0.45.0"
     "@wow-actions/parse-inputs": "npm:^2.0.1"
     axios: "npm:^1.20.0"
     eslint: "npm:^8.33.0"
